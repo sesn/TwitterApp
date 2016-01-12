@@ -1,0 +1,12 @@
+/*Style Sheet for Twitter Tracking Tool */
+/*Mixins */
+body {
+  font: 100% Helvetica, sans-serif; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */

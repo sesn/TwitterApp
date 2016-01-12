@@ -1,0 +1,16 @@
+<form ng-controller="addHashTagCtrl">
+	Hash Tag Name
+	<input type="text" ng-model="hashTag.name"><br>
+	Hash Tag Activation Date and Time
+
+	<input type="text" ng-model="hashTag.activation" datetime-picker name="asd"/> 
+
+	 <p>{{ hashTag.activation }}</p>
+	
+	<label>Created By</label>
+	<input type="text" value="{{ hashTag.createdBy }}" ng-disabled= "true" >
+	<div ng-click="submit()">Submit</div>
+	
+	<div></div>
+
+</form>	

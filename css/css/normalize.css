@@ -1,0 +1,53 @@
+/*
+Error: Invalid CSS after "sans-serif": expected expression (e.g. 1px, bold), was "; /* 1 *\/"
+        on line 10 of C:\wamp\www\project\TwitterApp\css\sass\normalize.sass
+
+5:  * 2. Prevent iOS and IE text size adjust after device orientation change,
+6:  *    without disabling user zoom.
+7:  *\/
+8: 
+9: html {
+10:   font-family: sans-serif; /* 1 *\/
+11:   -ms-text-size-adjust: 100%; /* 2 *\/
+12:   -webkit-text-size-adjust: 100%; /* 2 *\/
+13: }
+14: 
+15: /**
+
+Backtrace:
+C:\wamp\www\project\TwitterApp\css\sass\normalize.sass:10
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/lexer.rb:220:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:602:in `assert_done'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:63:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:183:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script.rb:27:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:1120:in `parse_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:710:in `parse_property'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:681:in `parse_property_or_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:647:in `parse_line'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:534:in `block in build_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:527:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:527:in `build_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"sans-serif\": expected expression (e.g. 1px, bold), was \"; /* 1 */\"\A         on line 10 of C:\wamp\www\project\TwitterApp\css\sass\normalize.sass\A \A 5:  * 2. Prevent iOS and IE text size adjust after device orientation change,\A 6:  *    without disabling user zoom.\A 7:  */\A 8: \A 9: html {\A 10:   font-family: sans-serif; /* 1 */\A 11:   -ms-text-size-adjust: 100%; /* 2 */\A 12:   -webkit-text-size-adjust: 100%; /* 2 */\A 13: }\A 14: \A 15: /**"; }

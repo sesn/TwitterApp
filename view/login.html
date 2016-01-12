@@ -1,0 +1,10 @@
+<form ng-controller="loginCtrl">
+	Login:
+	<input type="text" ng-model="user.userName"><br>
+	Password:
+	<input type="password" ng-model="user.userPass"><br>
+	
+	<div ng-click="submit()">Submit</div>
+
+	<div>User: {{ user.userName }}</div>
+</form>	

@@ -1,0 +1,52 @@
+<div>
+<table border="1" style="border-collapse: separate"	id="table1">
+	<thead>
+		<tr>
+			<th >No</th>
+			<th custom-table by="order" reverse="reverse" order="'hashtagName'">Hashtag Name</th>
+			<th custom-table by="order" reverse="reverse" order="'totalTweets'">Total Tweets</th>
+			<th custom-table by="order" reverse="reverse" order="'totalImpressions'">Total Impressions</th>
+			<th>Profile Visits</th>
+			<th custom-table by="order" reverse="reverse" order="'totalMentions'">Mentions</th>
+			<th>Followers</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat="x in hashtagArray | orderBy: order:reverse ">
+        	<td>{{ $index + 1 }}</td>
+        	<td><a ui-sref="hashtag({ hashtagName: x.hashtagName})">{{ x.hashtagName }}</a></td>
+            <td>{{ x.totalTweets }}</td>
+            <td>{{ x.totalImpressions }}</td>
+            <td>{{ x.profileVisits }}</td>
+            <td>{{ x.totalMentions }}</td>
+            <td>{{ x.totalFollowers }}</td>
+            <td><a ng-click= "delete(x)">Delete</a></td>
+        </tr>
+	</tbody>
+</table>
+<button ng-click="exportToExcel('#table1')">Export</button>
+</div>
+
+<br>
+Order : <b>{{order}}</b> reverse : <b>{{reverse}}</b>
+
+<div ng-controller="overviewChartCtrl">
+	<highchart id="overviewChartContainer" config="chartConfig"></highchart>
+</div>
+
+<div ng-controller="myctrl">
+        <div class="span12">
+            <input ng-model="chartConfig.title.text">
+            <button ng-click="addSeries()">Add Series</button>
+            <button ng-click="addPoints()">Add Points to Random Series</button>
+            <button ng-click="removeRandomSeries()">Remove Random Series</button>
+            <button ng-click="swapChartType()">Line/Bar</button>
+            <button ng-click="toggleLoading()">Loading?</button>
+        </div>
+        <div class="row">
+            <highchart id="chart1" config="chartConfig" class="span10"></highchart>
+        </div>
+</div>
+
